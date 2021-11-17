@@ -1,0 +1,14 @@
+<a [routerLink]="['/']">
+  <h1>My Store</h1>
+</a>
+<div>
+  <a class="button fancy-button" routerLink="/cart"><i class="material-icons">shopping_cart</i>Checkout</a>
+  <a class="button fancy-button" (click)="logOut()" *ngIf="isLogged"><i class="material-icons">logout</i>LogOut</a>
+  <a class="button fancy-button" (click)="logIn()" *ngIf="!isLogged"><i class="material-icons">login</i>LogIn</a>
+</div>
+
+<!-- <ion-icon name="<ion-icon name="log-out-outline"></ion-icon>"></ion-icon>
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
